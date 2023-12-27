@@ -3,22 +3,27 @@ import Square from './Square';
 
 const Board = () => {
   const [Squares, setSquares] = useState(Array(9).fill(null));
+  const [isXNext, setIsNext] = useState(false);
   // The value of the nextMove will alternate between X and O. When it is X's turn (nextMove === "X")
-// console.log(Squares);
+  // console.log(Squares);
 
   const handleSquareClick = clickedPosition => {
+    // null, 'X', 'O'
+    if (Squares[clickedPosition]) {
+      return;
+    }
 
-    setSquares((currentSquares) => {
-
+    setSquares(currentSquares => {
       return currentSquares.map((squareValue, position) => {
-        if(clickedPosition === position) {
-          return 'X';
+        if (clickedPosition === position) {
+          return isXNext ? 'X' : 'O';
         }
 
         return squareValue;
       });
-
     });
+
+    setIsNext(currentIsNext => !currentIsNext);
   };
 
   const renderSquare = position => {
