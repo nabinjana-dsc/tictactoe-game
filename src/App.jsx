@@ -62,7 +62,7 @@ const App = () => {
         onClick={onNewGame}
         className={`btn-reset ${winner ? 'active' : ''}`}
       >
-        Start new game
+        ::Start New Game::
       </button>
       <h2 style={{ fontWeight: 'normal' }}>Current game history</h2>
       <History history={history} moveTo={moveTo} currentMove={currentMove} />
