@@ -1,7 +1,11 @@
-const StatusMessage = ({ winner, isXNext, squares }) => {
-  const noMovesLeft = squares.every(squareValue => squareValue.length !== null);
+import Square from "./Square";
 
+const StatusMessage = ({ winner, gamingBoard }) => {
+  const { squares, isXNext } = gamingBoard;
+
+  const noMovesLeft = squares.every(squareValue => squareValue !== null);
   const nextPlayer = isXNext ? 'X' : 'O';
+
   const statusMessage = winner
     ? `Winner is ${winner}`
     : `Next Player is ${nextPlayer}`;
