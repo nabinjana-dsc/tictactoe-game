@@ -20,9 +20,6 @@ const Board = ({ squares, handleSquareClick, winningSquares }) => {
         {renderSquare(0)}
         {renderSquare(1)}
         {renderSquare(2)}
-        {/* <Square value={Squares[0]} onClick={() => handleSquareClick(0)} />
-        <Square value={Squares[1]} onClick={() => handleSquareClick(1)} />
-        <Square value={Squares[2]} onClick={() => handleSquareClick(2)} /> */}
       </div>
       <div className="board-row">
         {renderSquare(3)}
