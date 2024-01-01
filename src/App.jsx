@@ -64,7 +64,7 @@ const App = () => {
       >
         Start New Game
       </button>
-      <h2 style={{ fontWeight: 'normal' }}>Current game history</h2>
+      <h2 style={{ fontWeight: 'normal' }}>Current gams history</h2>
       <History history={history} moveTo={moveTo} currentMove={currentMove} />
       <div className="bg-balls" />
     </div>
