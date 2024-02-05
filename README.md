@@ -1,5 +1,7 @@
 # React + Vite
 
+![Screenshot 2024-01-28 175219](https://github.com/nabinjana-dsc/tictactoe-game/assets/120771456/3a279114-c780-443a-8cf5-dd213bc5166f)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
